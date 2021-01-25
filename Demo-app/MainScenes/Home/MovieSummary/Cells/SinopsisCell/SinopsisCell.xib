@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="4w1-mU-3va" customClass="SinopsisCell" customModule="Demo_App_Debug" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4w1-mU-3va" id="dsE-1c-rmv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-wM-mWe">
+                        <rect key="frame" x="20" y="8" width="374" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLp-Ax-c1f">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="YuH-xB-REF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="CustomGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NLp-Ax-c1f" secondAttribute="bottom" id="Oml-6D-NOp"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="XSv-Da-ZMZ"/>
+                            <constraint firstItem="NLp-Ax-c1f" firstAttribute="leading" secondItem="Ato-wM-mWe" secondAttribute="leading" id="YWb-FV-5k6"/>
+                            <constraint firstAttribute="trailing" secondItem="NLp-Ax-c1f" secondAttribute="trailing" id="dev-dy-3H3"/>
+                            <constraint firstItem="NLp-Ax-c1f" firstAttribute="top" secondItem="Ato-wM-mWe" secondAttribute="top" id="e5c-qO-LZR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ato-wM-mWe" secondAttribute="trailing" constant="20" symbolic="YES" id="OoF-ws-uy9"/>
+                    <constraint firstAttribute="bottom" secondItem="Ato-wM-mWe" secondAttribute="bottom" constant="8" id="Xw5-3G-JjC"/>
+                    <constraint firstItem="Ato-wM-mWe" firstAttribute="top" secondItem="dsE-1c-rmv" secondAttribute="top" constant="8" id="sPs-Wt-apN"/>
+                    <constraint firstItem="Ato-wM-mWe" firstAttribute="leading" secondItem="dsE-1c-rmv" secondAttribute="leading" constant="20" symbolic="YES" id="sSS-oI-wfP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="NLp-Ax-c1f" id="fFN-1M-9Nq"/>
+            </connections>
+            <point key="canvasLocation" x="-52.173913043478265" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CustomGray">
+            <color red="0.2630000114440918" green="0.2630000114440918" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

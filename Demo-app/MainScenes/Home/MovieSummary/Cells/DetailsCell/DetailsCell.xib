@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="180" id="dAZ-HY-fF2" customClass="DetailsCell" customModule="Demo_App_Debug" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dAZ-HY-fF2" id="6ct-cN-Mcv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uP8-ct-zU7">
+                        <rect key="frame" x="20" y="20" width="374" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4D-qE-JWP">
+                                <rect key="frame" x="20" y="13" width="334" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="oNc-XF-adk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" name="CustomGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4e-Zw-gqm">
+                                <rect key="frame" x="20" y="70" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4vv-C5-Mrp"/>
+                                    <constraint firstAttribute="width" constant="110" id="q34-Yl-z3M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="CustomGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFB-x1-Uwt">
+                                <rect key="frame" x="138" y="70" width="216" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZdQ-sS-gGe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" name="CustomGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cG3-0a-uNY">
+                                <rect key="frame" x="20" y="99" width="110" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CZF-Sn-eE6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="CustomGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-bU-xci">
+                                <rect key="frame" x="138" y="99" width="216" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cxx-pP-dja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" name="CustomRed"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IFB-x1-Uwt" firstAttribute="trailing" secondItem="SO8-bU-xci" secondAttribute="trailing" id="0TM-qn-3Bj"/>
+                            <constraint firstItem="IFB-x1-Uwt" firstAttribute="baseline" secondItem="w4e-Zw-gqm" secondAttribute="firstBaseline" constant="3" id="1fb-kV-iAz"/>
+                            <constraint firstItem="w4D-qE-JWP" firstAttribute="centerX" secondItem="uP8-ct-zU7" secondAttribute="centerX" id="2FR-Dl-7ey"/>
+                            <constraint firstItem="w4e-Zw-gqm" firstAttribute="leading" secondItem="cG3-0a-uNY" secondAttribute="leading" id="9BU-Ju-LeQ"/>
+                            <constraint firstItem="w4e-Zw-gqm" firstAttribute="trailing" secondItem="cG3-0a-uNY" secondAttribute="trailing" id="AXN-A9-0LN"/>
+                            <constraint firstItem="w4D-qE-JWP" firstAttribute="top" secondItem="uP8-ct-zU7" secondAttribute="top" constant="13" id="CSY-C5-IgR"/>
+                            <constraint firstItem="w4D-qE-JWP" firstAttribute="trailing" secondItem="IFB-x1-Uwt" secondAttribute="trailing" id="DON-Tj-YNy"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="JAA-IQ-xvs"/>
+                            <constraint firstItem="w4D-qE-JWP" firstAttribute="leading" secondItem="uP8-ct-zU7" secondAttribute="leading" constant="20" id="MUd-V1-PjW"/>
+                            <constraint firstItem="IFB-x1-Uwt" firstAttribute="leading" secondItem="SO8-bU-xci" secondAttribute="leading" id="SCL-q4-wh9"/>
+                            <constraint firstItem="cG3-0a-uNY" firstAttribute="baseline" secondItem="SO8-bU-xci" secondAttribute="baseline" id="U0R-ZV-3Ry"/>
+                            <constraint firstItem="IFB-x1-Uwt" firstAttribute="leading" secondItem="w4e-Zw-gqm" secondAttribute="trailing" constant="8" id="XPG-iE-AJy"/>
+                            <constraint firstAttribute="bottom" secondItem="cG3-0a-uNY" secondAttribute="bottom" constant="20" symbolic="YES" id="bQD-ly-pIL"/>
+                            <constraint firstItem="cG3-0a-uNY" firstAttribute="top" secondItem="w4e-Zw-gqm" secondAttribute="bottom" constant="8" id="sbb-op-cbU"/>
+                            <constraint firstItem="IFB-x1-Uwt" firstAttribute="top" secondItem="w4D-qE-JWP" secondAttribute="bottom" constant="27" id="vHx-Rs-RWe"/>
+                            <constraint firstItem="w4D-qE-JWP" firstAttribute="leading" secondItem="w4e-Zw-gqm" secondAttribute="leading" id="vZs-t7-c37"/>
+                            <constraint firstAttribute="bottom" secondItem="SO8-bU-xci" secondAttribute="bottom" constant="20" symbolic="YES" id="yuh-DR-eqH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="uP8-ct-zU7" firstAttribute="leading" secondItem="6ct-cN-Mcv" secondAttribute="leading" constant="20" id="2ow-67-Udg"/>
+                    <constraint firstItem="uP8-ct-zU7" firstAttribute="top" secondItem="6ct-cN-Mcv" secondAttribute="top" constant="20" id="Qwu-MO-8N9"/>
+                    <constraint firstAttribute="trailing" secondItem="uP8-ct-zU7" secondAttribute="trailing" constant="20" id="YAI-Qm-qVD"/>
+                    <constraint firstAttribute="bottom" secondItem="uP8-ct-zU7" secondAttribute="bottom" constant="20" id="j8B-tj-Yr1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="containerView" destination="uP8-ct-zU7" id="Dc6-dL-3h2"/>
+                <outlet property="ratingLabel" destination="SO8-bU-xci" id="iSm-NK-rQ9"/>
+                <outlet property="releaseDateLabel" destination="IFB-x1-Uwt" id="FRV-G1-7W3"/>
+                <outlet property="titleLabel" destination="w4D-qE-JWP" id="TwD-tB-NWd"/>
+            </connections>
+            <point key="canvasLocation" x="-186.95652173913044" y="174.10714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CustomGray">
+            <color red="0.2630000114440918" green="0.2630000114440918" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomRed">
+            <color red="1" green="0.23899999260902405" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
